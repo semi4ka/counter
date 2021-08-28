@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Counters from './components/counters';
-import NavBar from './components/navBar';
+import Counters from "./components/counters";
+import NavBar from "./components/navBar";
 
 function App() {
   const initialState = [
@@ -38,18 +38,18 @@ function App() {
     setCounters(newCounters);
   };
   return (
-<div className="col-lg-8 mx-auto p-3 py-md-5">
-  <main>
-    <NavBar totalItems={counters.reduce((a,c)=>a+c.value, 0)}/>
-    <Counters 
-    onDelete={handleDelete}
-    onIncrement={handleIncrement}
-    onDecrement={handleDecrement}
-    onReset={handleReset}
-    counters={counters}
-    />
-  </main>
-</div>
+    <div className="col-lg-8 mx-auto p-3 py-md-5">
+      <main>
+        <NavBar totalItems={counters.reduce((a, c) => a + c.value, 0)} />
+        <Counters
+          onDelete={handleDelete}
+          onIncrement={handleIncrement}
+          onDecrement={handleDecrement}
+          onReset={handleReset}
+          counters={counters}
+        />
+      </main>
+    </div>
   );
 }
 

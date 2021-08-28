@@ -1,6 +1,6 @@
 import React from "react";
 
-const Counter = ({id, value, name, onIncrement, onDecrement, onDelete }) => {
+const Counter = ({ id, value, name, onIncrement, onDecrement, onDelete }) => {
   const formValue = () => {
     return value === 0 ? "Ноль" : value;
   };
